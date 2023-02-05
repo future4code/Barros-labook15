@@ -1,0 +1,30 @@
+### Criar Uuário
+
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "Nasgon",
+    "email": "eusouonasgon@brutburg.com",
+    "password": "113377"
+}
+
+### Criar Post
+POST http://localhost:3003/post
+Content-Type: application/json
+
+{
+    "photo": "Perfil",
+    "description": "A beleza que vai não volta",
+    "type": "normal",
+    "author_id": "1675633603929"
+}
+
+### Buscar post pela Id
+
+GET http://localhost:3003/posts/:id
+Content-Type: application/json
+
+{
+    "id": "1675633970859"
+}
